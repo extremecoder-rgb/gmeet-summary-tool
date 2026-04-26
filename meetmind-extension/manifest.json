@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "MeetMind",
+  "version": "1.0",
+  "description": "Transcribe and summarize Google Meet meetings",
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "storage",
+    "scripting",
+    "offscreen",
+    "audioCapture"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
