@@ -5,7 +5,7 @@ MeetMind is a Chrome extension that transcribes Google Meet meetings in real-tim
 ## Features
 
 - **Real-time Audio Capture**: Captures audio from Google Meet tabs using Chrome's `tabCapture` API.
-- **AI-Powered Transcription & Analysis**: Uses Google Gemini 1.5 Flash to transcribe audio and generate intelligent summaries.
+- **AI-Powered Transcription & Analysis**: Uses Google Gemini 2.5 Flash to transcribe audio and generate intelligent summaries.
 - **Structured Output**: Provides executive summaries, key decisions, action items, risks, sentiment analysis, and WhatsApp-friendly summaries.
 - **WhatsApp Integration**: Sends summarized meeting notes via Twilio WhatsApp API.
 - **Multi-language Support**: Handles English, Hindi, Hinglish, and mixed languages in Indian business contexts.
